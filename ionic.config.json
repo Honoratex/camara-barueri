@@ -1,0 +1,7 @@
+{
+  "name": "Câmara Barueri",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,187 @@
+<ion-app>
+  <ion-split-pane when="sm" content-id="main-content">
+    <ion-menu content-id="main-content">
+      <ion-header>
+        <ion-toolbar style="color: #044a5e">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content>
+        <ion-list>
+          <ion-list-header>
+            Navigate
+          </ion-list-header>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item button>
+              <ion-icon slot="start" name='home'></ion-icon>
+              <ion-label>
+                Home
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <div class="ion-page" id="main-content">
+      <ion-header >
+        <ion-toolbar>
+          <ion-grid style="background: #fff; margin: 0; padding: 5px 0px 0px 0px;">
+            <ion-row >
+              <ion-col style="padding: 0; margin: 0;">
+                <div style="height: 40px;">
+                  <ion-buttons slot="start" style="margin-top: 5px;">
+                    <ion-menu-toggle>
+                      <ion-button style="padding-left: 0px;">
+                        <ion-icon name="menu" style="font-size: 30px; color: #034d59;"></ion-icon>
+                      </ion-button>
+                    </ion-menu-toggle>
+                  </ion-buttons>
+                </div>
+              </ion-col>
+              <ion-col style="padding: 0; margin: 0;">
+                <div style="text-align: center;">
+                  <img src="../assets/img/logo.jpg" style="max-width: 130px; position: relative; top: 3px;">
+                </div>
+              </ion-col>
+              <ion-col style="padding: 0; margin: 0;">
+                <div style="height: 40px;">
+                  <ion-buttons  style="flex-direction: row-reverse; margin-top: 5px;">
+                      <ion-button>
+                        <ion-icon  name="settings-outline" style="font-size: 27px; color: #034d59;"></ion-icon>
+                      </ion-button>
+                  </ion-buttons>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          
+        
+        </ion-toolbar>
+      </ion-header>
+
+
+      <ion-content>
+        <div style="background: #f2f2f2; height: 100%;">
+          <ion-grid style="height: 47px;">
+            <ion-row>
+              <ion-col size="2">
+                <div>
+                  <ion-buttons>
+                    <ion-button style="margin-left: -5px;">
+                      <ion-icon  name="person-circle-outline" style="font-size: 35px; color: #034d59;"></ion-icon>
+                    </ion-button>
+                </ion-buttons>
+                </div>
+              </ion-col>
+              <ion-col>
+                <div style="text-align: center;">
+                  <p style="font-weight: bold;font-size: 14px;padding-top: 8px; margin: 0;">Passaporte Legislativo</p>
+                </div>
+              </ion-col>
+              <ion-col size="2">
+                <div>
+                  <ion-buttons  style="flex-direction: row-reverse;">
+                    <ion-button style="margin-right: -5px;">
+                      <ion-icon  name="qr-code-outline" style="font-size: 27px; color: #999;"></ion-icon>
+                    </ion-button>
+                </ion-buttons>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+          <div style="padding: 0px 10px;">
+            <img src="../assets/img/img01.png" style="background: #ededed; width:100%; border-radius: 50%">
+          </div>
+
+          <ion-grid style="margin: 0; padding: 0;">
+            <ion-row style="text-align: center;">
+              <ion-col>
+                <h2 style="margin: 0; padding: 0; font-weight: bold;">Patrícia Ramos</h2>
+                <p style="margin: 0; padding: 0; color: #717171; font-size: 15px;">Visitante</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+
+          <ion-grid>
+
+            <ion-row>
+
+              <ion-col size="6">
+
+                <div class="ion-activatable ripple-parent" style="box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);">
+                  <button style="width: 100%;text-align: left;padding: 10px 5px;background: #fff;"> 
+                    <ion-icon name="home-outline" style="font-size: 17px; padding-left: 5px;"></ion-icon> 
+                    <spam style=" position: relative; top: -2px; left: 5px; font-size: 14px; ">Câmara</spam>
+                  </button>
+                  <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+                </div>
+
+              </ion-col>
+              
+              <ion-col size="6">
+                
+                <div class="ion-activatable ripple-parent" style="box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);">
+                  <button style="width: 100%;text-align: left;padding: 10px 5px;background: #fff;"> 
+                    <ion-icon name="mail-outline" style="font-size: 17px; padding-left: 5px;"></ion-icon> 
+                    <spam style=" position: relative; top: -2px; left: 5px; font-size: 14px; ">Mensagens</spam>
+                  </button>
+                  <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+                </div>
+
+              </ion-col>
+
+            </ion-row>
+
+            <ion-row>
+
+              <ion-col size="6">
+
+                <div class="ion-activatable ripple-parent" style="box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);">
+                  <button style="width: 100%;text-align: left;padding: 10px 5px;background: #fff;"> 
+                    <ion-icon name="newspaper-outline" style="font-size: 17px; padding-left: 5px;"></ion-icon> 
+                    <spam style=" position: relative; top: -2px; left: 5px; font-size: 14px; ">Sessão</spam>
+                  </button>
+                  <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+                </div>
+
+              </ion-col>
+
+              <ion-col size="6">
+
+                <div class="ion-activatable ripple-parent" style="box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);">
+                  <button style="width: 100%;text-align: left;padding: 10px 5px;background: #fff;"> 
+                    <ion-icon name="people-outline" style="font-size: 17px; padding-left: 5px;"></ion-icon> 
+                    <spam style=" position: relative; top: -2px; left: 5px; font-size: 14px; ">Vereadores</spam>
+                  </button>
+                  <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+                </div>
+
+              </ion-col>
+
+            </ion-row>
+
+          </ion-grid>
+
+         
+        </div>
+
+        <style>
+          .ripple-parent {
+            position: relative;
+            overflow: hidden;
+          }
+
+          :focus {
+              outline: -webkit-focus-ring-color auto 0px !important;
+          }
+        </style>
+        
+      </ion-content>
+    </div>
+
+  </ion-split-pane>
+</ion-app>
