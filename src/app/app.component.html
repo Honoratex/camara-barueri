@@ -1,6 +1,11 @@
 <ion-app>
   
   <ion-split-pane when="sm" content-id="main-content">
+    <ion-content>
+      <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+      </ion-refresher>
+    </ion-content>
     <ion-menu content-id="main-content">
       <ion-header>
         <ion-toolbar style="color: #044a5e">
@@ -64,7 +69,7 @@
 
 
       <ion-content>
-        <div style="background: #f2f2f2; height: 100%;">
+        <div class="bgcolorw" >
           <ion-grid style="height: 47px;">
             <ion-row>
               <ion-col size="2">
@@ -78,7 +83,7 @@
               </ion-col>
               <ion-col>
                 <div style="text-align: center;">
-                  <p style="font-weight: bold;font-size: 14px;padding-top: 8px; margin: 0;">Passaporte Legislativo</p>
+                  <p style="font-weight: bold;font-size: 21px;padding-top: 8px; margin: 0;">Passaporte Legislativo</p>
                 </div>
               </ion-col>
               <ion-col size="2">
@@ -115,8 +120,11 @@
 
                 <div class="ion-activatable ripple-parent" style="box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);">
                   <button style="width: 100%;text-align: left;padding: 10px 5px;background: #fff;"> 
-                    <ion-icon name="home-outline" style="font-size: 17px; padding-left: 5px;"></ion-icon> 
-                    <spam style=" position: relative; top: -2px; left: 5px; font-size: 14px; ">Câmara</spam>
+                     
+                    <p style=" position: relative;top: -2px;font-size: 14px;margin: 0; ">
+                      <ion-icon name="home-outline" style="font-size: 17px; padding-left: 5px; position: relative; top: 4px;"></ion-icon>
+                        Câmara
+                    </p>
                   </button>
                   <ion-ripple-effect type="unbounded"></ion-ripple-effect>
                 </div>
@@ -127,8 +135,10 @@
                 
                 <div class="ion-activatable ripple-parent" style="box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);">
                   <button style="width: 100%;text-align: left;padding: 10px 5px;background: #fff;"> 
-                    <ion-icon name="mail-outline" style="font-size: 17px; padding-left: 5px;"></ion-icon> 
-                    <spam style=" position: relative; top: -2px; left: 5px; font-size: 14px; ">Mensagens</spam>
+                    <p style=" position: relative;top: -2px;font-size: 14px;margin: 0; ">
+                      <ion-icon name="mail-outline" style="font-size: 17px; padding-left: 5px; position: relative; top: 4px;"></ion-icon> 
+                        Mensagens
+                    </p>
                   </button>
                   <ion-ripple-effect type="unbounded"></ion-ripple-effect>
                 </div>
@@ -143,8 +153,10 @@
 
                 <div class="ion-activatable ripple-parent" style="box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);">
                   <button style="width: 100%;text-align: left;padding: 10px 5px;background: #fff;"> 
-                    <ion-icon name="newspaper-outline" style="font-size: 17px; padding-left: 5px;"></ion-icon> 
-                    <spam style=" position: relative; top: -2px; left: 5px; font-size: 14px; ">Sessão</spam>
+                    <p style=" position: relative;top: -2px;font-size: 14px;margin: 0; ">
+                      <ion-icon name="newspaper-outline" style="font-size: 17px; padding-left: 5px; position: relative; top: 4px;"></ion-icon> 
+                        Sessão
+                    </p>
                   </button>
                   <ion-ripple-effect type="unbounded"></ion-ripple-effect>
                 </div>
@@ -155,8 +167,10 @@
 
                 <div class="ion-activatable ripple-parent" style="box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);">
                   <button style="width: 100%;text-align: left;padding: 10px 5px;background: #fff;"> 
-                    <ion-icon name="people-outline" style="font-size: 17px; padding-left: 5px;"></ion-icon> 
-                    <spam style=" position: relative; top: -2px; left: 5px; font-size: 14px; ">Vereadores</spam>
+                    <p style=" position: relative;top: -2px;font-size: 14px;margin: 0; ">  
+                      <ion-icon name="people-outline" style="font-size: 17px; padding-left: 5px; position: relative; top: 4px;"></ion-icon> 
+                        Vereadores
+                    </p>
                   </button>
                   <ion-ripple-effect type="unbounded"></ion-ripple-effect>
                 </div>
